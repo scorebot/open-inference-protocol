@@ -55,7 +55,6 @@ The model ready endpoint returns the readiness probe response for the server alo
 
     $ready_model_response =
     {
-      "name" : $string,
       "ready": $bool
     }
 
@@ -68,7 +67,7 @@ The server ready endpoint returns the readiness probe response for the server.
 
     $ready_server_response =
     {
-      "live" : $bool,
+      "ready" : $bool
     }
 
 ---
@@ -81,7 +80,7 @@ The server live endpoint returns the liveness probe response for the server.
 
     $live_server_response =
     {
-      "live" : $bool,
+      "live" : $bool
     }
 
 ---
